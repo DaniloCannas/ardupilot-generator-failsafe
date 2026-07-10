@@ -28,6 +28,8 @@ local land_commanded = false
 local rpm_missing_reported = false
 local mah_missing_reported = false
 
+gcs:send_text(6, "Generator FS: production script loaded")
+
 local function reset_state()
     low_rpm_since = nil
     generator_failed = false

@@ -26,6 +26,8 @@ local low_rpm_since = nil
 local generator_failed = false
 local land_commanded = false
 
+gcs:send_text(6, "Generator SIM: test script loaded")
+
 local function channel_is_high(channel)
     local pwm = rc:get_pwm(channel)
     return pwm ~= nil and pwm >= RC_HIGH_PWM
