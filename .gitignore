@@ -1,0 +1,5 @@
+# ArduPilot logs and local test output
+*.BIN
+*.bin
+logs/
+.DS_Store
